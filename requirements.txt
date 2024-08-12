@@ -1,0 +1,9 @@
+"fastapi[all]"
+"uvicorn[standard]"
+logging
+pydantic
+pytest
+icrawler
+opencv-python
+torch 
+torchvision
