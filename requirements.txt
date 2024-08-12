@@ -1,6 +1,7 @@
 "fastapi[all]"
 "uvicorn[standard]"
 logging
+Pillow
 pydantic
 pytest
 icrawler
