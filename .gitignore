@@ -1,4 +1,3 @@
 /FasTorch
 /.pytest_cache
-/data
 */__pycache__/
