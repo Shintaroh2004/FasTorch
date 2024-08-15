@@ -43,7 +43,8 @@ async def predict_dog(file:UploadFile=File(...)):
     img = await file.read()
     img=io.BytesIO(img)
     img=Image.open(img)
-    return f"{type(img)}"
+    ans=app.state.__USER_STATE__.pretend(img)
+    return f"犬種はおそらく{ans}です"
 
 #静的ファイル
 app.mount("/",StaticFiles(directory="static",html=True),name="static")
